@@ -17,5 +17,12 @@ export const settings : TSettings = {
     jwt:{
         secret: process.env.JWT_SECRET!,
         expiresIn: process.env.JWT_EXPIRES_IN! as StringValue
+    },
+    url: {
+        soil_url: "https://soil-api-vyom.vercel.app/predict"
+    },
+    openweather_api: {
+        api_key: process.env.OW_API!,
+        url: "https://api.openweathermap.org/data/2.5/weather"
     }
 };

@@ -17,5 +17,12 @@ export type TSettings = {
     jwt: {
         secret: string,
         expiresIn: any
+    },
+    url: {
+        soil_url: string
+    },
+    openweather_api: {
+        api_key: string,
+        url: string
     }
 }
