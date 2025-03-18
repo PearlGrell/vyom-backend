@@ -2,9 +2,6 @@ import { NextFunction, Response, Request, query } from "express";
 import { StatusError } from "../middlewares/error.middleware.js";
 import axios from "axios";
 import { settings } from "../config/settings.js";
-import path from 'node:path';
-import fs from 'node:fs';
-import { file, readableStreamToArrayBuffer } from "bun";
 
 export async function getParams(req: Request, res: Response, next: NextFunction) {
     const { lat, lon } = req.query;
