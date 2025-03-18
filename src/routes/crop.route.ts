@@ -1,11 +1,12 @@
 import { Router } from "express";
-import { getRecommendations } from "../controllers/crop.controller.js";
+import { getPrices, getParams, getRecommendation, getHealth } from "../controllers/crop.controller.js";
 
 const cropRouter = Router();
 
-//cropRouter.get('/prices', getPrices);
+cropRouter.get('/', getParams);
+cropRouter.get('/prices', getPrices);
 
-cropRouter.get('/recommendation', getRecommendations);
-//cropRouter.post('/health', getHealth);\
+cropRouter.post('/recommendation', getRecommendation)
+cropRouter.post('/health', getHealth);
 
 export default cropRouter;

@@ -24,5 +24,9 @@ export type TSettings = {
     openweather_api: {
         api_key: string,
         url: string
+    },
+    crop_prices_api: {
+        api_key: string,
+        url: string
     }
 }

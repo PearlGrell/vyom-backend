@@ -4,6 +4,7 @@
     "removeComments": true,
     "preserveConstEnums": true,
     "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": false,
     "outDir": "build",
     "strict": true,

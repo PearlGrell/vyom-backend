@@ -24,5 +24,9 @@ export const settings : TSettings = {
     openweather_api: {
         api_key: process.env.OW_API!,
         url: "https://api.openweathermap.org/data/2.5/weather"
+    },
+    crop_prices_api: {
+        api_key: process.env.PRICES_API!,
+        url: "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070"
     }
 };
